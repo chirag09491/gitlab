@@ -17,3 +17,12 @@ later make changes in this branch.
 to merge to any other branch go to the branch where you want to merge and use
 git merge <main branch>  <branch to be merged>
 
+ Using SSH key to push commits to github 
+go to github.com > settings > ssh keys > add ssh key
+on yout terminal generate a ssh key using ssh-keygen -t rsa
+upload public key to github 
+add below line in config file local in your repo on machine
+git config --add --local core.sshCommand 'ssh -i /Users/chiragsharma/git_tutorial/gitlab/gitlab_key'
+also test if key is working using
+ssh -T git@github.com -i gitlab_key
+git push -u origin main     ## this to push to main branch
