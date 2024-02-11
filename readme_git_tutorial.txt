@@ -11,6 +11,7 @@ git commit --amend --reset-author : to update the author for git
 =================================================
 git branch  ## list the branches and current branche, marked with *
 git branch test-branch main  ## 
+<<<<<<< HEAD
  to create a branch use git branch < new branch name> < source branch name >
 then change the branch to go to the new branch using  git checkout <branchname>  command
 later make changes in this branch.
@@ -26,3 +27,6 @@ git config --add --local core.sshCommand 'ssh -i /Users/chiragsharma/git_tutoria
 also test if key is working using
 ssh -T git@github.com -i gitlab_key
 git push -u origin main     ## this to push to main branch
+=======
+git push -u origin test-branch   ## in case aother branch needs to be pushed to github
+>>>>>>> test-branch
