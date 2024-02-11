@@ -9,3 +9,5 @@ git commit --amend --reset-author : to update the author for git
  if you dont want to track a type of file eg a particular extension it is to be added in a .gitignore file 
  GIT Branching
 =================================================
+git branch  ## list the branches and current branche, marked with *
+git branch test-branch main  ## 
